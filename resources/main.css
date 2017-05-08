@@ -1,0 +1,45 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	background-image: url("../img/pattern/pink-dust.png");
+}
+.jumbotron {
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-bottom: 0px;
+	background-image: url("../img/pattern/hip-square.png");
+}
+#navbar{
+	font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.navbar-fixed-top{
+    padding-right: 15px;
+}
+.navbar{
+	margin-bottom: 0px;
+	background-color: linen;
+}
+.main{
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-top: 0px;
+	position: relative;
+    height: 1000px;
+    background-image: url("../img/pattern/pink-dust.png");
+}
+.coming_soon{
+	margin-top: 175px;
+	height: 100px;
+	background-color: linen;
+	text-align: center;
+}
+.coming_soon h1,h2{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+/*Custom Mobile Rules*/
+@media (max-width: 768px) {
+	.lock{
+		padding-top: 25px;
+	}
+}
+

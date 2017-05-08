@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>CrowleyWebDesign</title>
+<!-- Bootstrap Core CSS -->
+<link href="resources/bootstrap.min.css" rel="stylesheet">
+<!--Custom CSS link -->
+<link href = "resources/main.css" rel = "stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+
+<style>
+.boxes{
+	background-color: linen;
+}
+.navbar-fixed{
+    top: 0;
+    z-index: 100;
+  	position: fixed;
+    width: 100%;
+    background-color: red;
+}
+</style>
+</head>
+
+<body>
+<!--Jumbotron Header -->
+<div class = "jumbotron jumbotron-fluid" id = "jumbo">
+	<div class = "container">
+	<div class = "row">
+		<div class = "lock col-xs-3 col-md-offset-1 col-md-2 text-center" >
+		<img src = "img/logo/Lock.png" align = "right" style = " width:100%;">
+		</div>
+		<div class = "col-xs-9">
+		<h1>Crowley Design &amp; Development</h1>
+		<p class="lead">Web Design - Branding - Marketing - Search Engine Optimization</p>
+		</div>
+	</div>	
+	</div>
+</div>
+<!-- Navbar-->
+<div id = "nav_bar">
+<nav class = "row navbar navbar-default">
+<div class = "container-fluid">
+	<!--Brang and toggle grouped for mobile-->
+	<div class = "navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	<a class = "navbar-brand" style = "font-family: 'Open Sans Condensed', sans-serif;" href = "#"><i>Crowley Design</i></a>
+	</div>
+	 <!-- Collect the nav links, forms, and other content for toggling -->
+	 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	 	<ul class = "nav navbar-nav navbar-right">
+	 		<li><a href = "#">Us</a></li>
+	 		<li><a href="#">Services</a></li>
+	 		<li><a href="#">Our Work</a></li>
+	 		<li><a href="#">Contact Us</a></li>
+	 		<li><a href="#">Payments</a></li>
+	 		</ul>
+
+	  </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+<!-- Main Content-->
+<div class = "main">
+	<div class = "coming_soon">
+		<h1>Content Coming Soon!</h1>
+	</div>
+</div>
+
+
+<!-- jQuery -->
+<script src="resources/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="resources/bootstrap.min.js"></script>
+<!-- JQuery function for navbar-fixed-top -->
+<script> 
+$(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      var d = $('#jumbo');
+    if ($(window).scrollTop() > d.prop("scrollHeight") ) {
+      $('#nav_bar').addClass('navbar-fixed-top');
+    }
+    if ($(window).scrollTop() < d.prop("scrollHeight")) {
+      $('#nav_bar').removeClass('navbar-fixed-top');
+    }
+
+  });
+});
+</script>
+
+
+</body>
+</html>
