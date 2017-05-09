@@ -6,6 +6,8 @@
 <!--Custom CSS link -->
 <link href = "resources/main.css" rel = "stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="swiper.min.css">
 
 <style>
 .boxes{
@@ -37,7 +39,7 @@
 	</div>
 </div>
 <!-- Navbar-->
-<div id = "nav_bar">
+<div id = "nav_bar" class = "navbar-custom">
 <nav class = "row navbar navbar-default">
 <div class = "container-fluid">
 	<!--Brang and toggle grouped for mobile-->
@@ -48,35 +50,165 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-	<a class = "navbar-brand" style = "font-family: 'Open Sans Condensed', sans-serif;" href = "#"><i>Crowley Design</i></a>
+	<a class = "navbar-brand XX" style = "font-family: 'Open Sans Condensed', sans-serif;" href = "#jumbo"><i>Crowley Design</i></a>
 	</div>
 	 <!-- Collect the nav links, forms, and other content for toggling -->
 	 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	 	<ul class = "nav navbar-nav navbar-right">
-	 		<li><a href = "#">Us</a></li>
-	 		<li><a href="#">Services</a></li>
-	 		<li><a href="#">Our Work</a></li>
-	 		<li><a href="#">Contact Us</a></li>
-	 		<li><a href="#">Payments</a></li>
-	 		</ul>
+	 		<li><a href = "#portfolio" class = "XX">Our Work</a></li>
+	 		<li ><a href="#about" class = "XX">Us</a></li>
+	 		<li><a href="#services" class ="XX">Services</a></li>
+	 		<li><a href="#contact" class = "XX">Contact Us</a></li>
+	 		<li><a href="#" class = "XX">Payments</a></li>
+	 	</ul>
 
 	  </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+</div><!-- /.container-fluid -->
 </nav>
 </div>
-<!-- Main Content-->
-<div class = "main">
-	<div class = "coming_soon">
-		<h1>Content Coming Soon!</h1>
-	</div>
-</div>
 
+<!-- Portfolio Grid Section -->
+    <section id="portfolio" class = "bump">
+    	<div class = "container">
+            <div class="porfolio_title row">
+                <div class="col-lg-12 text-center">
+                    <h1>Project Portfolio</h1>
+                    <!--<hr class="star-primary">-->
+                </div>
+            </div>
+            <div class = "port_height row">
+             <!--Start Swiper-->
+             <div class="swiper-container">
+             <div class="swiper-wrapper">
+             <!-- Queen's Space Conference -->
+                <div class="swiper-slide">
+                <div class="portfolio-item">
+                    <a href="#portfolioModal_QSC" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h4>Space Conference</h4>
+                                <i class="fa fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/qsc.png" class="img-responsive" alt="Circus tent" style = "border-radius: 15px;">
+                    </a>
+                </div>
+                </div>
+             
+                <!-- QUEngComp -->
+                <div class="swiper-slide">
+                <div class="portfolio-item">
+                    <a href="#portfolioModal_QUEngComp" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h4>QUEngComp</h4>
+                                <i class="fa fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/quengcomp.png" class="img-responsive" alt="Circus tent" style = "border-radius: 15px;">
+                    </a>
+                </div>
+                </div>
+                <!-- Light Bike -->
+                <div class="swiper-slide">
+                <div class="portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                
+                                <h4>Lit-Bike</h4>
+                                <i class="fa fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/litbike.png" class="img-responsive" alt="Slice of cake" style = "border-radius: 15px;">
+
+                        
+                    </a>
+                </div>
+                </div>
+
+                <!-- Personal Website -->
+                <div class="swiper-slide">
+                <div class="portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        
+
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h4>My Website!</h4>
+                                <i class="fa fa-search-plus fa-2x"></i>
+                                
+                            </div>
+                        </div>
+                        <img src="img/portfolio/mysite.png" class="img-responsive" alt="Cabin" style = "border-radius: 15px;">  
+                    </a>
+                </div>
+                </div>
+                <!-- QUExamBoss -->
+                <div class="swiper-slide">
+                <div class="portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h4>QU-ExamBoss</h4>
+                                <i class="fa fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/quexamboss.png" class="img-responsive" alt="Circus tent" style = "border-radius: 15px; border-color: black; border-width: 4px; border-style: solid;">
+                    </a>
+                </div>
+                </div>
+            
+             </div><!--End Swiper-->
+             <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+             </div><!--End Swiper-->    
+            </div><!--End Row-->
+    </section>
+    
+    <section id = "about">
+   	<div class = "containerr">
+    	<div class="header_title row">
+                <div class="col-lg-12 text-center">
+                    <h1>About Us</h1>
+                    <!--<hr class="star-primary">-->
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <section id = "services">
+   	<div class = "container">
+    	<div class="services_title row">
+                <div class="col-lg-12 text-center">
+                    <h1>Our Services</h1>
+                    <!--<hr class="star-primary">-->
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <section id = "contact">
+   	<div class = "container">
+    	<div class="contact_title row">
+                <div class="col-lg-12 text-center">
+                    <h1>Contact Us</h1>
+                    <!--<hr class="star-primary">-->
+                </div>
+            </div>
+    </div>
+    </section>
 
 <!-- jQuery -->
 <script src="resources/jquery.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="resources/bootstrap.min.js"></script>
-<!-- JQuery function for navbar-fixed-top -->
+<!--Swiper JS-->
+<script src="swiper.min.js"></script>
+<!--Custom JS-->
+<script src="js/custom.js"></script>
+
+<!-- JQuery function for navbar-fixed-top and fix navigation top of page jump -->
 <script> 
 $(document).ready(function() {
   
@@ -86,13 +218,61 @@ $(document).ready(function() {
       var d = $('#jumbo');
     if ($(window).scrollTop() > d.prop("scrollHeight") ) {
       $('#nav_bar').addClass('navbar-fixed-top');
+      $('body').css('margin-top','50px');
     }
     if ($(window).scrollTop() < d.prop("scrollHeight")) {
       $('#nav_bar').removeClass('navbar-fixed-top');
+      $('body').css('margin-top','0px');
     }
-
   });
 });
+</script>
+<!--Smooth Scroll Script-->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to nav links
+  $(".XX").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      console.log("Hash" + hash);
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 50
+      }, 800, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+	
+
+<!-- Initialize Swiper -->
+<script>
+if ( $(window).width() > 739) {      
+	//Add your javascript for large screens here
+	 var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    slidesPerView: 3,
+    paginationClickable: true,
+    spaceBetween: 30
+}); 
+} 
+else {
+	//Add your javascript for small screens here 
+	 var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    slidesPerView: 1,
+    paginationClickable: true,
+    spaceBetween: 30
+});
+}
 </script>
 
 
